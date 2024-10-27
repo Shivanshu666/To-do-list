@@ -1,0 +1,138 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(image.png);
+}
+.container {
+    padding: 25px;
+    max-height: max-content;
+    width: fit-content;
+    border: 10px groove black;
+    backdrop-filter: blur(10px);
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  background-image: url(todolist.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#taskInput {
+  height: 50px;
+  width: 350px;
+  border: none;
+  border:  2px solid grey;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  background-color: transparent;
+}
+ul li {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(7, 6, 6);
+}
+.delete {
+  border: none;
+  font-size: 1rem;
+  height: max-content;
+  margin-left: 15px;
+  background-color: crimson;
+  color: aliceblue;
+  border-radius: 10px;
+  border: 3px solid black;
+  padding: 5px;
+  transition: .2s;
+}
+#addTaskButton {
+  border-radius: 0px 10px;
+  font-size: 1.2rem;
+  margin-left: 25px;
+  border: 5px groove red;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#addTaskButton:hover{
+    color: aliceblue;
+    background-color: black;
+}
+.delete:hover{
+    background-color: black;
+    color: aliceblue;
+    border: 3px solid red;
+    
+}
+/* //// Responsive //// */
+@media screen and (max-width: 576px) {
+  #taskInput {
+    height: 30px;
+    width: 250px;
+    font-size: 1.3rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  #addTaskButton {
+    font-size: 1rem;
+    border: 5px groove rgb(255, 0, 200);
+  }
+  ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  .delete {
+    border: 2px solid black;
+    font-size: 0.8rem;
+    border-radius: none;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  #taskInput {
+    height: 30px;
+    width: 150px;
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  #addTaskButton {
+    font-size: 1rem;
+    border: 5px groove rgb(255, 0, 200);
+  }
+  ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  .delete {
+    border: 2px solid black;
+    font-size: 0.8rem;
+    border-radius: none;
+  }
+  .container {
+    padding: 15px;
+    border: 8px groove rgb(27, 31, 32);
+  }
+}
+
+@media screen and (max-width: 334px){
+    #taskInput {
+        height: 30px;
+        width: 250px;
+        font-size: 0.8rem;
+      }
+      #addTaskButton {
+        font-size: 0.8rem;
+        border: 5px groove rgb(255, 0, 200);
+        margin: 15px 85px;
+      }
+      h1{
+        font-size: 1.8rem;
+      }
+    
+}
