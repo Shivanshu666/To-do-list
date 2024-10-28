@@ -15,7 +15,7 @@ document.getElementById("addTaskButton").addEventListener("click", function(){
     li.onclick=function(){
     li.classList.toggle("completed");
     };
-    document.getElementById("taskList").appendChild(li);
+    document.getElementById("taskList").appendChild(li);  // adding in html element with the help of appendchild
     taskInput.value="";    
   };
 });
